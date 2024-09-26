@@ -62,7 +62,7 @@ nav {
     justify-content: space-around;
     height: 60px;
     color: beige;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 215, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -82,7 +82,7 @@ nav {
     font-size: 2rem;
   }
   .text-white {
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: cursive;
     font-weight: 500;
@@ -93,7 +93,7 @@ nav {
   }
 
 #log {
-  color: black;
+  color: white;
   font-style: italic;
 }
   
@@ -151,22 +151,27 @@ nav {
   .about-section {
     display: flex;
     align-items: center;
-    max-width: 80%;
+    max-width: 70%;
     margin: 40px auto;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    background-color: #8C1818;
+    border-radius: 40px;
+    border-style: groove;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
     flex: 1;
     padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    text-justify: newspaper;
+    color: white;
 }
 
 .about-image {
-    width: 250px; /* Adjust as needed */
-    height: auto;
+    width: 500px; /* Adjust as needed */
+    height: 100%;
     border-radius: 10px;
     margin-left: 20px;
     cursor: pointer; /* Change cursor to pointer for click effect */
@@ -210,7 +215,181 @@ nav {
 }
 
 #about-head {
-  color: #8C1818;
+  color: gold;
   font-family: cursive;
   font-size: 2rem;
+}
+
+.but {
+  color: gold;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+/* vlog css statrs here */
+.vlog-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.vlog-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.vlog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vlog-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.vlog-image {
+  width: 100%;
+  height: auto;
+}
+
+.video-button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #8C1818;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.video-button:hover {
+  background-color: gold; /* Darker shade for hover */
+}
+
+.vlog-head {
+  color: #8C1818;
+  font-size: 1rem;
+  font-family: cursive;
+}
+
+.vlog-heading {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+/* contact us starts here */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #8C1818;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: goldenrod;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer starts here */
+.footer {
+  background-color: #8C1818;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.social-links a:hover {
+  color: #ffcc00; /* Change to a highlight color on hover */
 }

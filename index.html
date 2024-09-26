@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReciFy.com</title>
-  <link rel="shortcut icon" href="./img/fav.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/bg.jpg" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -16,11 +17,11 @@
       <span id="log">Reci</span><span id="dot">.</span><span id="agrifoods">Fy</span>
     </h1>
     <div id="nav-items">
-      <a class="text-white" href="#">Home</a>
-      <a class="text-white" href="#">About</a>
-      <a class="text-white" href="#">Recipies</a>
-      <a class="text-white" href="#">Vlog</a>
-      <a class="text-white" href="#">Contact</a>
+      <a class="text-white" href="#hero">Home</a>
+      <a class="text-white" href="#about">About</a>
+      <a class="text-white" href="#pizza">Recipe</a>
+      <a class="text-white" href="#vlog">Vlog</a>
+      <a class="text-white" href="#contact">Contact</a>
     </div>
   </nav>
   <!-- nav bar ends here -->
@@ -36,35 +37,101 @@
     </div>
   </section>
   <!-- hero section ends here -->
-   <!-- about section starts here -->
-   <section class="about-section fade-in" id="about">
+  <!-- about section starts here -->
+  <section class="about-section fade-in" id="about">
     <div class="about-content">
-        <h1 id="about-head">About Us</h1>
-        <p>Welcome to our culinary haven, where every dish tells a story and every recipe is a celebration!</p>
-        <p>We believe that cooking is not just a necessity but an art form that brings people together. Our mission is to inspire and empower home cooks of all levels to unleash their creativity in the kitchen.</p>
-        <p>Cooking should be an adventure filled with exploration, flavor, and joy. That's why we’ve curated a diverse collection of recipes—from cherished family classics to innovative new creations—that cater to every palate and occasion. Whether you’re looking to whip up a quick weeknight meal or impress your loved ones with a gourmet feast, we’ve got you covered!</p>
-        <p>Join our community of food enthusiasts and discover tips, tricks, and the love for cooking that unites us all. Let’s create delicious memories together!</p>
-        <a href="#contact" class="contact-button">Get in Touch</a>
+      <h1 id="about-head">About Us</h1>
+      <p>Welcome to our culinary haven, where every dish tells a story and every recipe is a celebration!</p>
+      <p>We believe that cooking is not just a necessity but an art form that brings people together. Our mission is to
+        inspire and empower home cooks of all levels to unleash their creativity in the kitchen.</p>
+      <p>Join our community of food enthusiasts and discover tips, tricks, and the love for cooking that unites us all.
+        Let’s create delicious memories together!</p>
+      <a class="but" href="#contact" class="contact-button">Get in Touch</a>
     </div>
     <img src="./img/about.jpg" alt="Joy In Food" class="about-image" id="about-image">
-    
+
     <!-- Modal -->
     <div id="image-modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <div id="caption"></div>
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+      <div id="caption"></div>
     </div>
-</section>
-<!-- about section ends here -->
-  <!-- pizza section starts here -->
+  </section>
+  <!-- about section ends here -->
+  <!-- recipes section starts here -->
   <section id="pizza">
     <div class="container">
-      <h1>Pizza Recipe Finder</h1>
+      <h1>Recipe Finder</h1>
       <input type="text" id="query" placeholder="Search for recipes..." />
       <button id="searchBtn">Search</button>
       <div id="results"></div>
     </div>
   </section>
+  <!-- recipe section ends here -->
+  <!-- vlog section starts here -->
+  <section id="vlog" class="vlog-section">
+    <h2 class="vlog-heading">Our Vlog</h2>
+    <div class="vlog-container">
+        <div class="vlog-item">
+            <img src="./img/family.jpg" alt="Family Cooking" class="vlog-image">
+            <h3 class="vlog-head">Recipes for Families</h3>
+            <p>A family that cooks together, stays together. We have the perfect recipies for any occasion!</p>
+            <a href="https://youtu.be/n2nNDaOPvn4?si=ChDfBFDei7ZZm9KO" class="video-button" target="_blank">Watch Video</a>
+        </div>
+        <div class="vlog-item">
+            <img src="./img/chopped.jpg" alt="Beginner Courses" class="vlog-image">
+            <h3 class="vlog-head">Beginner Classes</h3>
+            <p>Learn how to cook from scratch with fresh ingredients as a begginer. Explore new dishes with our recipes</p>
+            <a href="https://youtu.be/WEDndTCyGgU?si=E2pqb0nyGEfoUipf" class="video-button" target="_blank">Watch Video</a>
+        </div>
+        <div class="vlog-item">
+            <img src="./img/cake.jpg" alt="Learn Baking" class="vlog-image">
+            <h3 class="vlog-head">Bake the Perfect Cake</h3>
+            <p>Follow my step-by-step guide to baking a delicious cake! Become a Bake Master at your own pace</p>
+            <a href="https://www.youtube.com/watch?v=example3" class="video-button" target="_blank">Watch Video</a>
+        </div>
+        <div class="vlog-item">
+          <img src="./img/market.jpg" alt="Learn Ingredients" class="vlog-image">
+          <h3 class="vlog-head">Learn Ingredients</h3>
+          <p>Learn ingredients. Learn when and where to use each ingredient. creat magic combinations. </p>
+          <a href="https://youtu.be/nLsBAtVo_O8?si=ucnoFDexJLm-rgye" class="video-button" target="_blank">Watch Video</a>
+      </div>
+    </div>
+</section>
+<!-- vlog section ends here -->
+ <!-- contact us section starts here -->
+ <section id="contact">
+  <h2 class="vlog-heading">Contact Us</h2>
+  <form class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+ </section>
+<!-- contact us ends here -->
+ <!-- footer starts here -->
+ <!-- Include Font Awesome from CDN -->
+<footer class="footer">
+    <div class="footer-content">
+        <h2>ReciFy Recipes</h2>
+        <p>&copy; 2024 ReciFy Recipes. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p"></i> Pinterest</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- footer ends here -->
   <script src="scripts.js"></script>
 </body>
 
