@@ -79,3 +79,26 @@ window.onclick = function(event) {
     }
 }
 
+// stats start here
+document.addEventListener("DOMContentLoaded", () => {
+    const counts = document.querySelectorAll(".count");
+
+    counts.forEach(count => {
+        const target = +count.getAttribute("data-target");
+        let currentCount = 0;
+        const increment = Math.ceil(target / 200); // Adjust speed of increment
+
+        const updateCount = () => {
+            if (currentCount < target) {
+                currentCount += increment;
+                if (currentCount > target) {
+                    currentCount = target;
+                }
+                count.textContent = currentCount;
+                requestAnimationFrame(updateCount);
+            }
+        };
+
+        updateCount();
+    });
+});
