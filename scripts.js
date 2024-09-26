@@ -27,3 +27,54 @@ document.getElementById('searchBtn').addEventListener('click', function() {
           resultsDiv.innerHTML = '<p>Error fetching recipes. Please try again.</p>';
       });
 });
+
+// Smooth Scroll Functionality
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Text Animation on Scroll
+const aboutSection = document.getElementById('about');
+const options = {
+    root: null,
+    threshold: 0.1
+};
+
+const callback = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            aboutSection.classList.add('visible');
+        }
+    });
+};
+
+const observer = new IntersectionObserver(callback, options);
+observer.observe(aboutSection);
+
+// Image Modal Functionality
+const img = document.getElementById('about-image');
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-img');
+const captionText = document.getElementById('caption');
+const closeSpan = document.getElementsByClassName('close')[0];
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt; // Use the alt attribute as the caption
+}
+
+closeSpan.onclick = function() { 
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}

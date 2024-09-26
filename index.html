@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaFy.com</title>
-    <link rel="shortcut icon" href="./img/fav.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReciFy.com</title>
+  <link rel="shortcut icon" href="./img/fav.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Pizza Recipe Finder</h1>
-        <input type="text" id="query" placeholder="Search for recipes..." />
-        <button id="searchBtn">Search</button>
-        <div id="results"></div>
+  <!-- nav section here -->
+  <nav>
+    <h1 id="logo-size">
+      <span id="log">Reci</span><span id="dot">.</span><span id="agrifoods">Fy</span>
+    </h1>
+    <div id="nav-items">
+      <a class="text-white" href="#">Home</a>
+      <a class="text-white" href="#">About</a>
+      <a class="text-white" href="#">Recipies</a>
+      <a class="text-white" href="#">Vlog</a>
+      <a class="text-white" href="#">Contact</a>
     </div>
-    <script src="scripts.js"></script>
+  </nav>
+  <!-- nav bar ends here -->
+  <!-- hero section starts here -->
+  <section id="hero">
+    <div class="overlay">
+      <h1 id="hero-title">
+        Welcome To <span class="text-black">Reci.</span>Fy</h1>
+      <p id="hero-subtext">
+        Get all your recipies here. Make your healthy delicious food with us...
+      </p>
+      <button class="hero-button">Learn more</button>
+    </div>
+  </section>
+  <!-- hero section ends here -->
+   <!-- about section starts here -->
+   <section class="about-section fade-in" id="about">
+    <div class="about-content">
+        <h1 id="about-head">About Us</h1>
+        <p>Welcome to our culinary haven, where every dish tells a story and every recipe is a celebration!</p>
+        <p>We believe that cooking is not just a necessity but an art form that brings people together. Our mission is to inspire and empower home cooks of all levels to unleash their creativity in the kitchen.</p>
+        <p>Cooking should be an adventure filled with exploration, flavor, and joy. That's why we’ve curated a diverse collection of recipes—from cherished family classics to innovative new creations—that cater to every palate and occasion. Whether you’re looking to whip up a quick weeknight meal or impress your loved ones with a gourmet feast, we’ve got you covered!</p>
+        <p>Join our community of food enthusiasts and discover tips, tricks, and the love for cooking that unites us all. Let’s create delicious memories together!</p>
+        <a href="#contact" class="contact-button">Get in Touch</a>
+    </div>
+    <img src="./img/about.jpg" alt="Joy In Food" class="about-image" id="about-image">
+    
+    <!-- Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+</section>
+<!-- about section ends here -->
+  <!-- pizza section starts here -->
+  <section id="pizza">
+    <div class="container">
+      <h1>Pizza Recipe Finder</h1>
+      <input type="text" id="query" placeholder="Search for recipes..." />
+      <button id="searchBtn">Search</button>
+      <div id="results"></div>
+    </div>
+  </section>
+  <script src="scripts.js"></script>
 </body>
+
 </html>

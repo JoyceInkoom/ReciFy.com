@@ -2,13 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
 }
 
 .container {
     max-width: 600px;
     margin: auto;
-    background-image: url("./img/bg.jpg");
+    background-color: whitesmoke;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +27,7 @@ input {
 
 button {
     padding: 10px 15px;
-    background: #28a745;
+    background: #8C1818;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -36,7 +35,7 @@ button {
 }
 
 button:hover {
-    background: #218838;
+    background: gold;
 }
 
 #results {
@@ -50,4 +49,168 @@ button:hover {
 
 .recipe h3 {
     margin: 0;
+}
+
+#pizza {
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    color: beige;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  
+  #nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: 17pt;
+  }
+  
+  #logo-size {
+    font-size: 2rem;
+  }
+  .text-white {
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: 500;
+  }
+  
+  .text-black {
+    color: gold;
+  }
+
+#log {
+  color: black;
+  font-style: italic;
+}
+  
+  #hero {
+    background-image: url("./img/herobg.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  #hero-title {
+    color: white;
+    font-size: 3rem;
+  }
+  
+  #hero-subtext {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .hero-button {
+    background-color: #8C1818;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .hero-button :hover {
+    background-color: gold;
+    transform: scale(1.05);
+  }
+  
+  #dot {
+    color: brown;
+  }
+  
+  #agrifoods {
+    color: gold;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-image {
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer; /* Change cursor to pointer for click effect */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#about-head {
+  color: #8C1818;
+  font-family: cursive;
+  font-size: 2rem;
 }
