@@ -102,3 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCount();
   });
 });
+
+document.getElementById("heroButton").addEventListener("click", function () {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+});

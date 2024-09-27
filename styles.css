@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: white;
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -62,9 +63,10 @@ nav {
   justify-content: space-around;
   height: 60px;
   color: beige;
-  background-color: rgba(255, 215, 0, 0.1);
+  background-color: #8c1818;
   position: fixed;
-  width: 100%;
+  width: 97.3%;
+  margin-left: 1.3rem;
   top: 0;
   left: 0;
   z-index: 50;
@@ -90,6 +92,7 @@ nav {
 
 .text-black {
   color: gold;
+  font-style: italic;
 }
 
 #log {
@@ -141,7 +144,7 @@ nav {
 }
 
 #dot {
-  color: brown;
+  color: gold;
 }
 
 #agrifoods {
@@ -348,13 +351,14 @@ body {
 }
 
 /* works start here */
-#works {
+.works {
   margin: 5rem 0;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   row-gap: 70px;
+  background-color: white;
 }
 
 .header {
@@ -369,7 +373,7 @@ body {
   font-size: 2.5rem;
 }
 
-#gallery {
+.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
@@ -409,7 +413,7 @@ body {
   opacity: 1;
 }
 
-#explain {
+.explain {
   font-style: oblique;
   font-size: 20px;
   font-weight: 500;
@@ -475,7 +479,7 @@ body {
   color: #ffcc00; /* Change to a highlight color on hover */
 }
 
-#team-head {
+.team-head {
   color: #8c1818;
 }
 
@@ -493,9 +497,20 @@ body {
   margin: 15px;
   padding: 20px;
   width: 150px;
+  align-items: center;
 }
 
 .count {
   font-size: 2em;
   color: #8c1818;
+  margin-left: 1rem;
+  margin-top: 3rem;
 }
+
+.name {
+  font-style: oblique;
+  font-weight: 600;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+

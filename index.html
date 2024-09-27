@@ -33,7 +33,7 @@
       <p id="hero-subtext">
         Get all your recipies here. Make your healthy delicious food with us...
       </p>
-      <button class="hero-button">Learn more</button>
+      <button class="hero-button" id="heroButton">Learn more</button>
     </div>
   </section>
   <!-- hero section ends here -->
@@ -48,7 +48,7 @@
         Let’s create delicious memories together!</p>
       <a class="but" href="#contact" class="contact-button">Get in Touch</a>
     </div>
-    <img src="./img/about.jpg" alt="Joy In Food" class="about-image" id="about-image">
+    <img src="./img/dish.jpg" alt="Joy In Food" class="about-image" id="about-image">
 
     <!-- Modal -->
     <div id="image-modal" class="modal">
@@ -68,17 +68,77 @@
     </div>
   </section>
   <!-- recipe section ends here -->
-  <!-- team start here -->
-  <section id="works">
+   <!-- works start here -->
+   <section class="works">
     <div class="header">
-      <h2 id="team-head">Meet The Team</h2>
-      <p id="explain">
+      <h2 class="team-head">Our Works</h2>
+      <p class="explain">
+        We have variety of recipies for every single dish.
+      </p>
+    </div>
+    <!-- gallery 1 -->
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="./img/pastry.jpg" alt="Pastries" />
+        <div class="gallery-overlay">
+          <span class="title">Pastry</span>
+          <span class="details">Different varieties</span>
+        </div>
+      </div>
+      <!-- gallery 2 -->
+      <div class="gallery-item">
+        <img src="./img/salad.jpg" alt="Salad" />
+        <div class="gallery-overlay">
+          <span class="title">Salad</span>
+          <span class="details">Different varieties</span>
+        </div>
+      </div>
+      <!-- gallery 3 -->
+      <div class="gallery-item">
+        <img src="./img/smoothie.jpg" alt="Smoothies" />
+        <div class="gallery-overlay">
+          <span class="title">Smoothies</span>
+          <span class="details">Different varieties</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- works ends here -->
+    <!-- stats start here -->
+  <section class="stats">
+    <div class="stat">
+      <h2 class="count" data-target="10">0</h2>
+      <p class="name">Years</p>
+    </div>
+    <div class="stat">
+      <h2 class="count" data-target="5000">0</h2>
+      <p class="name">Menus</p>
+    </div>
+    <div class="stat">
+      <h2 class="count" data-target="50000">0</h2>
+      <p class="name">Users</p>
+    </div>
+    <div class="stat">
+      <h2 class="count" data-target="500">0</h2>
+      <p class="name">Staff</p>
+    </div>
+    <div class="stat">
+      <h2 class="count" data-target="1000000">0</h2>
+      <p class="name">Subscribers</p>
+    </div>
+  </section>
+  <!-- stats end here -->
+  <!-- team start here -->
+  <section class="works">
+    <div class="header">
+      <h2 class="team-head">Meet The Team</h2>
+      <p class="explain">
         We are a team of world class five star chefs. Diversity and talent is part of our core mandate and we bring you
         deliciousness in the heart of your home
       </p>
     </div>
     <!-- gallery 1 -->
-    <div id="gallery">
+    <div class="gallery">
       <div class="gallery-item">
         <img src="./img/team.jpg" alt="Meet The Team" />
         <div class="gallery-overlay">
@@ -136,30 +196,6 @@
     </div>
   </section>
   <!-- vlog section ends here -->
-  <!-- stats start here -->
-  <section class="stats">
-    <div class="stat">
-      <h2 class="count" data-target="10">0</h2>
-      <p>Years in Business</p>
-    </div>
-    <div class="stat">
-      <h2 class="count" data-target="150">0</h2>
-      <p>Dishes / Menus</p>
-    </div>
-    <div class="stat">
-      <h2 class="count" data-target="5000">0</h2>
-      <p>Users</p>
-    </div>
-    <div class="stat">
-      <h2 class="count" data-target="50">0</h2>
-      <p>Staff</p>
-    </div>
-    <div class="stat">
-      <h2 class="count" data-target="10000">0</h2>
-      <p>Social Media Followers</p>
-    </div>
-  </section>
-  <!-- stats end here -->
   <!-- contact us section starts here -->
   <section id="contact">
     <h2 class="vlog-heading">Contact Us</h2>
@@ -178,7 +214,6 @@
   </section>
   <!-- contact us ends here -->
   <!-- footer starts here -->
-  <!-- Include Font Awesome from CDN -->
   <footer class="footer">
     <div class="footer-content">
       <h2>ReciFy Recipes</h2>
